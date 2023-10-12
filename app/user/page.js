@@ -1,4 +1,4 @@
-import getAllUser from "@/lib/getAllUser";
+import getAllUser from "@/services/getAllUser";
 import Link from "next/link";
 
 export const metadata = {

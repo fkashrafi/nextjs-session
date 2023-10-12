@@ -1,6 +1,6 @@
-import getAllUser from "@/lib/getAllUser";
-import getUser from "@/lib/getUser";
-import getUserPost from "@/lib/getUserPost";
+import getAllUser from "@/services/getAllUser";
+import getUser from "@/services/getUser";
+import getUserPost from "@/services/getUserPost";
 import { Suspense } from "react";
 import UserPosts from "./components/UserPosts";
 
@@ -26,7 +26,7 @@ export default async function SinglePage({ params: { user_Id } }) {
     <section>
       <p>{user.name}</p>
       <p>{user.email}</p>
-      <p>{date}</p>
+      <p>{date}</p>y
       <br />
       <hr />
       <Suspense fallback={<h1>Loading.........</h1>}>
